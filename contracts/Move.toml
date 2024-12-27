@@ -3,11 +3,11 @@ name = "NFTMarketplace"
 version = "0.1.0"
 
 [addresses]
-NFTMarketplace = "your-marketplace-address-here"
+NFTMarketplace = "0x75ddf648ace075a4dfb356d3c5cd2cb4e61249d7273d3a5491e0ee486f26791f"
 aptos_framework = "0x1"
 primitives = "0xCAFE"
 
 [dependencies]
-AptosFramework = { git = "https://github.com/aptos-labs/aptos-core.git", subdir = "aptos-move/framework/aptos-framework", rev = "main" }
-AptosStdlib = { git = "https://github.com/aptos-labs/aptos-core.git", subdir = "aptos-move/framework/aptos-stdlib", rev = "main" }
-MoveStdlib = { git = "https://github.com/aptos-labs/aptos-core.git", subdir = "aptos-move/framework/move-stdlib", rev = "main" }
+AptosFramework = { local = "./aptos-core/aptos-move/framework/aptos-framework" }
+AptosStdlib = { local = "./aptos-core/aptos-move/framework/aptos-stdlib" }
+MoveStdlib = { local = "./aptos-core/aptos-move/framework/move-stdlib" }

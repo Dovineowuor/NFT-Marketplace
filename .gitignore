@@ -2,3 +2,5 @@ node_modules
 .env
 .aptos
 */build
+*./aptos-core-aptos-framework-v1.24.1
+*.zip
